@@ -1,17 +1,15 @@
-<section class="stats">
+<section class="stats" id="tech">
   <header class="stats-header">
-    <p class="eyebrow">NÚMEROS</p>
-    <h2>Algumas métricas rápidas</h2>
-    <p class="subtitle">
-      Não é só sobre linhas de código — é sobre impacto, tempo de carregamento e experiência final.
-    </p>
+    <p class="eyebrow">TECHNOLOGIES</p>
+    <h2>Tech & Tools that shape my work...</h2>
   </header>
 
   <div class="stats-grid">
-    <article class="stat-card" *ngFor="let stat of stats">
-      <p class="value">{{ stat.value }}</p>
-      <p class="label">{{ stat.label }}</p>
-      <p class="detail" *ngIf="stat.detail">{{ stat.detail }}</p>
+    <article class="stat-card" *ngFor="let tech of techs">
+      <div class="icon-wrapper">
+        <img [src]="tech.icon" alt="{{ tech.name }}" class="icon" />
+      </div>
+      <p class="name">{{ tech.name }}</p>
     </article>
   </div>
 </section>

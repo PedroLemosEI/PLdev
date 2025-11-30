@@ -8,7 +8,7 @@ import { Projects } from './sections/projects/projects';
 
 @Component({
   selector: 'app-root',
-  imports: [Hero, OnOff, Projects, Stats, Contact],
+  imports: [Hero, OnOff, Stats, Contact],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
