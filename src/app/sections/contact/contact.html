@@ -33,6 +33,16 @@
         </a>
       </div>
 
+      <div class="email-pill-wrapper">
+        <button type="button" class="email-pill" (click)="copyEmail()">
+          <span class="email-dot"></span>
+          <span class="email-text">pedrolemos1999@gmail.com</span>
+          <span class="email-action" [class.copied]="copied">
+            {{ copied ? 'Copied!' : 'Copy email' }}
+          </span>
+        </button>
+      </div>
+
       <p class="footer-note">Available for remote &amp; hybrid opportunities · Based in PT 🇵🇹</p>
     </div>
   </div>
